@@ -9,32 +9,32 @@
 import UIKit
 import CoreData
 class AddCategoryViewController: UIViewController {
-
+    
     @IBOutlet weak var switchController: UISegmentedControl!
     var titleText = "Add Category"
-        var category: NSManagedObject? = nil
-        var indexPathForCategory: IndexPath? = nil
+    var category: NSManagedObject? = nil
+    var indexPathForCategory: IndexPath? = nil
     
     
     
     
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            titleLabel.text = titleText
-            if let category = self.category {
-                categoryNameTextField.text = category.value(forKey: "categoryName") as? String
-                priceTextField.text = category.value(forKey: "price") as? String
-                
-               
-            }
-            // Do any additional setup after loading the view.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        titleLabel.text = titleText
+        if let category = self.category {
+            categoryNameTextField.text = category.value(forKey: "categoryName") as? String
+            priceTextField.text = category.value(forKey: "price") as? String
+            
+            
         }
-        
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-        }
-        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -42,9 +42,12 @@ class AddCategoryViewController: UIViewController {
     
     @IBOutlet weak var priceTextField: UITextField!
     
+    @IBAction func converter(_ sender: UIButton) {
+        performSegue(withIdentifier: "converter", sender: self)
+    }
     
-
-        // MARK: - Navigation
+    
+    // MARK: - Navigation
     
     
     
@@ -56,7 +59,7 @@ class AddCategoryViewController: UIViewController {
         }
         if switchController.selectedSegmentIndex == 1 {
             priceTextField.text =  "-$"
-             priceTextField.textColor = UIColor.red
+            priceTextField.textColor = UIColor.red
         }
         
         
@@ -65,17 +68,17 @@ class AddCategoryViewController: UIViewController {
     //========================
     
     
-        
+    
     @IBAction func saveAndClose(_ sender: Any) {
-            performSegue(withIdentifier: "unwindToCategoryList", sender: self)
-        }
+        performSegue(withIdentifier: "unwindToCategoryList", sender: self)
+    }
     
     @IBAction func close(_ sender: Any) {
-            categoryNameTextField.text = nil
-            priceTextField.text = nil
-            performSegue(withIdentifier: "unwindToCategoryList", sender: self)
-        }
-        
-        
+        categoryNameTextField.text = nil
+        priceTextField.text = nil
+        performSegue(withIdentifier: "unwindToCategoryList", sender: self)
+    }
+    
+    
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B800FDD91FAAA36B007875AC /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B800FDD81FAAA36B007875AC /* ConverterViewController.swift */; };
 		B8E1329A1FA2921D0044D07E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E132991FA2921D0044D07E /* AppDelegate.swift */; };
 		B8E1329F1FA2921D0044D07E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E1329D1FA2921D0044D07E /* Main.storyboard */; };
 		B8E132A21FA2921D0044D07E /* Expenses_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8E132A01FA2921D0044D07E /* Expenses_App.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B800FDD81FAAA36B007875AC /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		B8E132961FA2921D0044D07E /* Expenses App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expenses App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E132991FA2921D0044D07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E1329E1FA2921D0044D07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				B8E132991FA2921D0044D07E /* AppDelegate.swift */,
 				B8E132AE1FA2957C0044D07E /* CategoryTableViewController.swift */,
 				B8E132B01FA297EA0044D07E /* AddCategoryViewController.swift */,
+				B800FDD81FAAA36B007875AC /* ConverterViewController.swift */,
 				B8E132B21FA298EE0044D07E /* CategoryDetailViewController.swift */,
 				B8E1329D1FA2921D0044D07E /* Main.storyboard */,
 				B8E132A31FA2921D0044D07E /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 				B8E1329A1FA2921D0044D07E /* AppDelegate.swift in Sources */,
 				B8E132AF1FA2957C0044D07E /* CategoryTableViewController.swift in Sources */,
 				B8E132B31FA298EE0044D07E /* CategoryDetailViewController.swift in Sources */,
+				B800FDD91FAAA36B007875AC /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
